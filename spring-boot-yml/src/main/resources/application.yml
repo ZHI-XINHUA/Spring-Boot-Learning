@@ -1,0 +1,34 @@
+person:
+  lastName: 张三
+  age: 18
+  birth: 2000/10/1
+  map:              #map: {k1: key1,k2: key2}
+    k1: key1
+    k2: key2
+  list:             #list: [l1,l2,l3]
+    - l1
+    - l2
+    - l3
+  dog:
+    name: olay
+    age: 3
+
+
+server:
+  port: 8080
+spring:
+  profiles:
+    active: prod
+
+---
+server:
+  port: 8081
+spring:
+     profiles: dev    #开发环境
+
+---
+server:
+  port: 8082
+spring:
+  profiles: prod    #生产环境
+
